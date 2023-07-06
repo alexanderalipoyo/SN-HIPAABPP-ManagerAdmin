@@ -1,24 +1,15 @@
 {
   "stats": {
-    "suites": 6,
-    "tests": 57,
-    "passes": 55,
+    "suites": 15,
+    "tests": 202,
+    "passes": 196,
     "pending": 0,
-<<<<<<< HEAD
     "failures": 6,
     "start": "2023-07-06T09:53:57.271Z",
     "end": "2023-07-06T10:34:46.715Z",
     "duration": 2291557,
     "testsRegistered": 202,
     "passPercent": 97.02970297029702,
-=======
-    "failures": 2,
-    "start": "2023-07-06T09:39:37.653Z",
-    "end": "2023-07-06T09:51:01.813Z",
-    "duration": 614397,
-    "testsRegistered": 57,
-    "passPercent": 96.49122807017544,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -27,20 +18,15 @@
   },
   "results": [
     {
-<<<<<<< HEAD
       "uuid": "6bd9b75a-c3c5-4aac-bde6-6155f38fdf53",
-=======
-      "uuid": "d5a87d92-7adc-4753-a8a2-1b2e7641a629",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
       "title": "",
-      "fullFile": "cypress\\e2e\\unlimited-training\\manager-admin\\profile.ts",
-      "file": "cypress\\e2e\\unlimited-training\\manager-admin\\profile.ts",
+      "fullFile": "cypress\\e2e\\hipaa-bpp\\manager-admin\\newsfeed.ts",
+      "file": "cypress\\e2e\\hipaa-bpp\\manager-admin\\newsfeed.ts",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-<<<<<<< HEAD
           "uuid": "b3c56892-bbf8-4ce6-bd3c-d66be153b50b",
           "title": "HIPAA BPP : Newsfeed - Manager Admin",
           "fullFile": "",
@@ -291,10 +277,6 @@
         {
           "uuid": "9239b615-4d3b-41ea-8dd4-44db6693e807",
           "title": "HIPAA BPP : General - Manager Admin",
-=======
-          "uuid": "9e46867f-caab-4966-9169-5ebd68f12fe8",
-          "title": "UT : General - Manager Admin",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -302,13 +284,9 @@
           "tests": [
             {
               "title": "Application Menu : Default items should visible",
-              "fullTitle": "UT : General - Manager Admin Application Menu : Default items should visible",
+              "fullTitle": "HIPAA BPP : General - Manager Admin Application Menu : Default items should visible",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 31130,
-=======
-              "duration": 33451,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -317,19 +295,13 @@
               "context": null,
               "code": "cy.loginPortal();\nSIDE_NAV_BAR.basePoint();\nSIDE_NAV_BAR.verifyItemsIfExist('MA');",
               "err": {},
-<<<<<<< HEAD
               "uuid": "08b8e674-95bd-4cad-aa86-90a888201173",
               "parentUUID": "9239b615-4d3b-41ea-8dd4-44db6693e807",
-=======
-              "uuid": "d4b937b3-25be-4f3c-aad3-ce000078dfaf",
-              "parentUUID": "9e46867f-caab-4966-9169-5ebd68f12fe8",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
               "title": "Application Menu : Check texts/labels if visible",
-<<<<<<< HEAD
               "fullTitle": "HIPAA BPP : General - Manager Admin Application Menu : Check texts/labels if visible",
               "timedOut": null,
               "duration": 34,
@@ -3272,9 +3244,6 @@
             {
               "title": "Download Micro Training",
               "fullTitle": "HIPAA BPP : Manager Admin - Training Reports Download Micro Training",
-=======
-              "fullTitle": "UT : General - Manager Admin Application Menu : Check texts/labels if visible",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "timedOut": null,
               "duration": 43,
               "state": "passed",
@@ -3283,312 +3252,52 @@
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "SIDE_NAV_BAR.verifyTextsIfContains('MA');",
+              "code": "COMP_TRAINING.trainingReportTypes('annual', 'download_micto_training', null);",
               "err": {},
-<<<<<<< HEAD
               "uuid": "819d1566-aff2-4a71-bedc-b46258935f02",
               "parentUUID": "986e8cc7-649b-46f4-9426-8fe86af04231",
-=======
-              "uuid": "3e780e8a-9288-43cb-abfe-47eb4b93ae44",
-              "parentUUID": "9e46867f-caab-4966-9169-5ebd68f12fe8",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "Application Menu : Validate favorite application",
-              "fullTitle": "UT : General - Manager Admin Application Menu : Validate favorite application",
+              "title": "Validate search on non-existing users",
+              "fullTitle": "HIPAA BPP : Manager Admin - Training Reports Validate search on non-existing users",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 8436,
-=======
-              "duration": 16124,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "SIDE_NAV_BAR.favoriteApp();\nCOMM_ELEMENTS.toasterFavApp();",
+              "code": "COMP_TRAINING.trainingReportTypes('annual', 'search_non_existing_users', null);",
               "err": {},
-<<<<<<< HEAD
               "uuid": "8a739620-7a1e-4b23-8a80-fbfd8fd725fd",
               "parentUUID": "986e8cc7-649b-46f4-9426-8fe86af04231",
-=======
-              "uuid": "6206a7a8-8023-438d-9810-ef8e99aef452",
-              "parentUUID": "9e46867f-caab-4966-9169-5ebd68f12fe8",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "My Profile : Default items and fields should visible",
-              "fullTitle": "UT : General - Manager Admin My Profile : Default items and fields should visible",
+              "title": "Validate search on micro training",
+              "fullTitle": "HIPAA BPP : Manager Admin - Training Reports Validate search on micro training",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 10054,
               "state": "passed",
               "speed": "slow",
-=======
-              "duration": 2247,
-              "state": "passed",
-              "speed": "fast",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "SIDE_NAV_BAR.editProfile();\nMY_PROFILE.verifyItemsIfExist('UT', 'MA');\nFOOTER.verifyItemsIfExist('UT');\nHEADER.verifyItemsIfExist('MA');",
+              "code": "COMP_TRAINING.trainingReportTypes('micro_training', 'search_existing_trainings', null);",
               "err": {},
-<<<<<<< HEAD
               "uuid": "011a125b-0c1a-4964-9e63-f3a41140989d",
               "parentUUID": "986e8cc7-649b-46f4-9426-8fe86af04231",
-=======
-              "uuid": "98eee39b-c7d0-43c8-ac60-a620086538a3",
-              "parentUUID": "9e46867f-caab-4966-9169-5ebd68f12fe8",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "My Profile : Check texts/labels if visible",
-              "fullTitle": "UT : General - Manager Admin My Profile : Check texts/labels if visible",
-              "timedOut": null,
-              "duration": 197,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "MY_PROFILE.verifyTextsIfContains('MA');\nFOOTER.verifyTextsIfContains('', 'UT');\nHEADER.verifyTextsIfContains();",
-              "err": {},
-              "uuid": "1dfcf93a-185d-4307-8e2c-9743b3396bfb",
-              "parentUUID": "9e46867f-caab-4966-9169-5ebd68f12fe8",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "My Profile : Update Basic Information",
-              "fullTitle": "UT : General - Manager Admin My Profile : Update Basic Information",
-              "timedOut": null,
-              "duration": 20577,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "MY_PROFILE.profile('update_basic_info', 'UT');\nCOMM_ELEMENTS.toaster('success');\ncy.reload();",
-              "err": {},
-              "uuid": "06224ed2-9771-4709-af09-179905d509eb",
-              "parentUUID": "9e46867f-caab-4966-9169-5ebd68f12fe8",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "My Profile (NEGATIVE) : Invalidate Update button with empty mandatory fields",
-              "fullTitle": "UT : General - Manager Admin My Profile (NEGATIVE) : Invalidate Update button with empty mandatory fields",
-              "timedOut": null,
-              "duration": 4394,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "MY_PROFILE.profile('clear_all_fields', '');",
-              "err": {},
-              "uuid": "2e4e484e-9a5c-4aaa-aaea-65ed5806b434",
-              "parentUUID": "9e46867f-caab-4966-9169-5ebd68f12fe8",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "My Profile (NEGATIVE) : Password and verify fields password does not match",
-              "fullTitle": "UT : General - Manager Admin My Profile (NEGATIVE) : Password and verify fields password does not match",
-              "timedOut": null,
-              "duration": 3253,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "MY_PROFILE.profile('un_matched_password', '');\ncy.reload();",
-              "err": {},
-              "uuid": "41511243-b7f4-489f-9c58-48d6d2535295",
-              "parentUUID": "9e46867f-caab-4966-9169-5ebd68f12fe8",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "My Profile (EDGE CASE) : Add alphabet and special character on phone number",
-              "fullTitle": "UT : General - Manager Admin My Profile (EDGE CASE) : Add alphabet and special character on phone number",
-              "timedOut": null,
-              "duration": 3631,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "MY_PROFILE.profile('validate_phone_number', '');",
-              "err": {},
-              "uuid": "fee647b1-8ac8-41da-b4ad-1d373db70a37",
-              "parentUUID": "9e46867f-caab-4966-9169-5ebd68f12fe8",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "My Profile (EDGE CASE) : Add alphabet and special character on mobile number",
-              "fullTitle": "UT : General - Manager Admin My Profile (EDGE CASE) : Add alphabet and special character on mobile number",
-              "timedOut": null,
-              "duration": 537,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "MY_PROFILE.profile('validate_mobile_number', '');",
-              "err": {},
-              "uuid": "36074a1d-7a44-496d-b1c7-fb6a2d7abfb1",
-              "parentUUID": "9e46867f-caab-4966-9169-5ebd68f12fe8",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "My Profile (OOTB) : Able to change country code on phone number",
-              "fullTitle": "UT : General - Manager Admin My Profile (OOTB) : Able to change country code on phone number",
-              "timedOut": null,
-              "duration": 1545,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "MY_PROFILE.profile('validate_mobile_country_code', '');",
-              "err": {},
-              "uuid": "480e8247-96d1-40d8-85e8-99aea8eee80d",
-              "parentUUID": "9e46867f-caab-4966-9169-5ebd68f12fe8",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "My Profile (OOTB) : Disable update button when mandatory fields are empty",
-              "fullTitle": "UT : General - Manager Admin My Profile (OOTB) : Disable update button when mandatory fields are empty",
-              "timedOut": null,
-              "duration": 942,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "MY_PROFILE.profile('disable_update_button', '');",
-              "err": {},
-              "uuid": "c054d72a-3af9-468a-92de-9779309bb857",
-              "parentUUID": "9e46867f-caab-4966-9169-5ebd68f12fe8",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "My Profile : Validate Password Strength - risk",
-              "fullTitle": "UT : General - Manager Admin My Profile : Validate Password Strength - risk",
-              "timedOut": null,
-              "duration": 587,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "COMM_ELEMENTS.passwordStrength('risky');",
-              "err": {},
-              "uuid": "0e1a81bd-de31-4b39-8a9f-4b1adf0a8cd2",
-              "parentUUID": "9e46867f-caab-4966-9169-5ebd68f12fe8",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "My Profile : Validate Password Strength - weak",
-              "fullTitle": "UT : General - Manager Admin My Profile : Validate Password Strength - weak",
-              "timedOut": null,
-              "duration": 492,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "COMM_ELEMENTS.passwordStrength('weak');",
-              "err": {},
-              "uuid": "f66e7874-31bc-4865-a8a1-a03f895c95ef",
-              "parentUUID": "9e46867f-caab-4966-9169-5ebd68f12fe8",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "My Profile : Validate Password Strength - fair",
-              "fullTitle": "UT : General - Manager Admin My Profile : Validate Password Strength - fair",
-              "timedOut": null,
-              "duration": 695,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "COMM_ELEMENTS.passwordStrength('fair');",
-              "err": {},
-              "uuid": "88fcbe2b-e279-44a5-ab3d-08e218c3bab3",
-              "parentUUID": "9e46867f-caab-4966-9169-5ebd68f12fe8",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "My Profile : Validate Password Strength - good",
-              "fullTitle": "UT : General - Manager Admin My Profile : Validate Password Strength - good",
-              "timedOut": null,
-              "duration": 725,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "COMM_ELEMENTS.passwordStrength('good');",
-              "err": {},
-              "uuid": "c36b794e-9f63-42be-94a6-456abe94ed24",
-              "parentUUID": "9e46867f-caab-4966-9169-5ebd68f12fe8",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "My Profile : Validate Password Strength - strong",
-              "fullTitle": "UT : General - Manager Admin My Profile : Validate Password Strength - strong",
-              "timedOut": null,
-              "duration": 1016,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "COMM_ELEMENTS.passwordStrength('strong');",
-              "err": {},
-              "uuid": "a8ff9e43-1969-405c-bfae-d4e57a8c922b",
-              "parentUUID": "9e46867f-caab-4966-9169-5ebd68f12fe8",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-<<<<<<< HEAD
             "4f5d2029-d915-4fa1-9208-4a0718242576",
             "83462f58-ff4a-401f-bda9-2dcb2cbb3db0",
             "42479360-32e1-4f60-9ceb-69673fc264c9",
@@ -3599,34 +3308,11 @@
             "819d1566-aff2-4a71-bedc-b46258935f02",
             "8a739620-7a1e-4b23-8a80-fbfd8fd725fd",
             "011a125b-0c1a-4964-9e63-f3a41140989d"
-=======
-            "d4b937b3-25be-4f3c-aad3-ce000078dfaf",
-            "3e780e8a-9288-43cb-abfe-47eb4b93ae44",
-            "6206a7a8-8023-438d-9810-ef8e99aef452",
-            "98eee39b-c7d0-43c8-ac60-a620086538a3",
-            "1dfcf93a-185d-4307-8e2c-9743b3396bfb",
-            "06224ed2-9771-4709-af09-179905d509eb",
-            "2e4e484e-9a5c-4aaa-aaea-65ed5806b434",
-            "41511243-b7f4-489f-9c58-48d6d2535295",
-            "fee647b1-8ac8-41da-b4ad-1d373db70a37",
-            "36074a1d-7a44-496d-b1c7-fb6a2d7abfb1",
-            "480e8247-96d1-40d8-85e8-99aea8eee80d",
-            "c054d72a-3af9-468a-92de-9779309bb857",
-            "0e1a81bd-de31-4b39-8a9f-4b1adf0a8cd2",
-            "f66e7874-31bc-4865-a8a1-a03f895c95ef",
-            "88fcbe2b-e279-44a5-ab3d-08e218c3bab3",
-            "c36b794e-9f63-42be-94a6-456abe94ed24",
-            "a8ff9e43-1969-405c-bfae-d4e57a8c922b"
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-<<<<<<< HEAD
           "duration": 148631,
-=======
-          "duration": 90463,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -3642,26 +3328,17 @@
       "_timeout": 2000
     },
     {
-<<<<<<< HEAD
       "uuid": "0736f764-b81d-46dd-85ee-35541d690578",
-=======
-      "uuid": "3069c112-084b-46dd-9ec5-70f6a099ffc8",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
       "title": "",
-      "fullFile": "cypress\\e2e\\unlimited-training\\manager-admin\\reg_codes.ts",
-      "file": "cypress\\e2e\\unlimited-training\\manager-admin\\reg_codes.ts",
+      "fullFile": "cypress\\e2e\\hipaa-bpp\\manager-admin\\my-dashboard\\manager-admin-training.ts",
+      "file": "cypress\\e2e\\hipaa-bpp\\manager-admin\\my-dashboard\\manager-admin-training.ts",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-<<<<<<< HEAD
           "uuid": "876f5bc3-0526-425b-9ed4-358cee6ed68c",
           "title": "HIPAA BPP : Manager Admin Training",
-=======
-          "uuid": "b771e928-8b6c-4b16-af12-bee7af91aa87",
-          "title": "UT : Add New Managers - Registration codes",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -3669,9 +3346,8 @@
           "tests": [
             {
               "title": "Default items should visible",
-              "fullTitle": "UT : Add New Managers - Registration codes Default items should visible",
+              "fullTitle": "HIPAA BPP : Manager Admin Training Default items should visible",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 29960,
               "state": "passed",
               "speed": "slow",
@@ -3691,59 +3367,41 @@
               "fullTitle": "HIPAA BPP : Manager Admin Training Check texts/labels if visible",
               "timedOut": null,
               "duration": 3609,
-=======
-              "duration": 4583,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "NEW_USER.register('default_items', null);",
+              "code": "TRAINING.viewTrainingTab();\nTRAINING.validateScenario('default_texts', 'HIPAA_BPP', 'MA');\nFOOTER.verifyItemsIfExist('IBPP');\nHEADER.verifyItemsIfExist('MA');",
               "err": {},
-<<<<<<< HEAD
               "uuid": "4beec075-eaef-4bf4-b512-d6b942fb9d25",
               "parentUUID": "876f5bc3-0526-425b-9ed4-358cee6ed68c",
-=======
-              "uuid": "3e2962f6-470c-4551-b98e-009089e5b78c",
-              "parentUUID": "b771e928-8b6c-4b16-af12-bee7af91aa87",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "Validate successful new user account creation",
-              "fullTitle": "UT : Add New Managers - Registration codes Validate successful new user account creation",
+              "title": "Validate Cybersecurity Training Videos",
+              "fullTitle": "HIPAA BPP : Manager Admin Training Validate Cybersecurity Training Videos",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 37594,
-=======
-              "duration": 10633,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "NEW_USER.register('add_user', 'success_creation');",
+              "code": "TRAINING.validateScenario('security_training_videos', 'HIPAA_BPP', null);",
               "err": {},
-<<<<<<< HEAD
               "uuid": "0069f0a8-db8a-44f7-881b-545bc7a4c954",
               "parentUUID": "876f5bc3-0526-425b-9ed4-358cee6ed68c",
-=======
-              "uuid": "b47c1a6c-a9b3-4f4d-9e43-0527b4869423",
-              "parentUUID": "b771e928-8b6c-4b16-af12-bee7af91aa87",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "Validate existing user",
-              "fullTitle": "UT : Add New Managers - Registration codes Validate existing user",
+              "title": "Validate Optional Manager Training",
+              "fullTitle": "HIPAA BPP : Manager Admin Training Validate Optional Manager Training",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 12512,
               "state": "passed",
               "speed": "slow",
@@ -3781,211 +3439,58 @@
               "fullTitle": "HIPAA BPP : Manager Admin Training Edge - Validate Reviewing Security Quiz",
               "timedOut": null,
               "duration": 6514,
-=======
-              "duration": 8164,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
               "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "NEW_USER.register('add_user', 'already_exist');",
+              "code": "TRAINING.validateScenario('review_security_quiz', 'HIPAA_BPP', null);\nCOMM_ELEMENTS.hideLoadingScreen();",
               "err": {},
-<<<<<<< HEAD
               "uuid": "0e804cfd-a586-4a10-ac4a-b3501bed400e",
               "parentUUID": "876f5bc3-0526-425b-9ed4-358cee6ed68c",
-=======
-              "uuid": "09490e0d-d93f-48ec-b7e9-e402b283f102",
-              "parentUUID": "b771e928-8b6c-4b16-af12-bee7af91aa87",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "Validate cancel adding new user",
-              "fullTitle": "UT : Add New Managers - Registration codes Validate cancel adding new user",
+              "title": "Validate Retaking Security Quiz",
+              "fullTitle": "HIPAA BPP : Manager Admin Training Validate Retaking Security Quiz",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 10608,
-=======
-              "duration": 461,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
-              "speed": "fast",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit(Cypress.env(\"url\"));\nNEW_USER.register('cancel_creating_user', null);",
+              "code": "TRAINING.validateScenario('retake_security_quiz', 'HIPAA_BPP', null);\nCOMM_ELEMENTS.hideLoadingScreen();",
               "err": {},
-<<<<<<< HEAD
               "uuid": "f3798c6c-0c3e-4991-bc5b-84a6880600f4",
               "parentUUID": "876f5bc3-0526-425b-9ed4-358cee6ed68c",
-=======
-              "uuid": "cc21ff20-013e-4008-a2bd-6df069e29ebf",
-              "parentUUID": "b771e928-8b6c-4b16-af12-bee7af91aa87",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "Check field validations",
-              "fullTitle": "UT : Add New Managers - Registration codes Check field validations",
+              "title": "Validate Step 3 - Print Your Certificate",
+              "fullTitle": "HIPAA BPP : Manager Admin Training Validate Step 3 - Print Your Certificate",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 11759,
-=======
-              "duration": 2256,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
-              "speed": "fast",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "NEW_USER.register('disable_submit_button', null);",
+              "code": "TRAINING.validateScenario('print_certificate', 'HIPAA_BPP', null);\nCOMM_ELEMENTS.hideLoadingScreen();",
               "err": {},
-<<<<<<< HEAD
               "uuid": "9b80e8f9-5fa6-4371-9bb4-acf6dd7404b8",
               "parentUUID": "876f5bc3-0526-425b-9ed4-358cee6ed68c",
-=======
-              "uuid": "9762da2b-03de-4eb0-ba54-81671cfabdd4",
-              "parentUUID": "b771e928-8b6c-4b16-af12-bee7af91aa87",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Validate matching email and confirm email fields",
-              "fullTitle": "UT : Add New Managers - Registration codes Validate matching email and confirm email fields",
-              "timedOut": null,
-              "duration": 7683,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "NEW_USER.register('validation_fields', 'email_not_matched');",
-              "err": {},
-              "uuid": "7612644b-5402-4c17-b4f3-74f8872679da",
-              "parentUUID": "b771e928-8b6c-4b16-af12-bee7af91aa87",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Validate matching password and verify password fields",
-              "fullTitle": "UT : Add New Managers - Registration codes Validate matching password and verify password fields",
-              "timedOut": null,
-              "duration": 6162,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit(Cypress.env(\"url\"));\nNEW_USER.register('validation_fields', 'passwords_not_matched');",
-              "err": {},
-              "uuid": "bac35141-6f8b-48f1-9bc2-7c8828a87c2f",
-              "parentUUID": "b771e928-8b6c-4b16-af12-bee7af91aa87",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Create account : Validate Password Strength - risk",
-              "fullTitle": "UT : Add New Managers - Registration codes Create account : Validate Password Strength - risk",
-              "timedOut": null,
-              "duration": 610,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "NEW_USER.newUser.click();\nCOMM_ELEMENTS.passwordStrength('risky');",
-              "err": {},
-              "uuid": "3eab1d99-d43d-46c7-8736-d1ae9217c8ec",
-              "parentUUID": "b771e928-8b6c-4b16-af12-bee7af91aa87",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Create account : Validate Password Strength - weak",
-              "fullTitle": "UT : Add New Managers - Registration codes Create account : Validate Password Strength - weak",
-              "timedOut": null,
-              "duration": 676,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "NEW_USER.newUser.click();\nCOMM_ELEMENTS.passwordStrength('weak');",
-              "err": {},
-              "uuid": "938dfad3-e340-49ce-b170-589e65f5c231",
-              "parentUUID": "b771e928-8b6c-4b16-af12-bee7af91aa87",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Create account : Validate Password Strength - fair",
-              "fullTitle": "UT : Add New Managers - Registration codes Create account : Validate Password Strength - fair",
-              "timedOut": null,
-              "duration": 756,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit(Cypress.env(\"url\"));\nNEW_USER.newUser.click();\nCOMM_ELEMENTS.passwordStrength('fair');",
-              "err": {},
-              "uuid": "4a946f8b-0bc8-4110-ae75-03d46bc5250c",
-              "parentUUID": "b771e928-8b6c-4b16-af12-bee7af91aa87",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Create account : Validate Password Strength - good",
-              "fullTitle": "UT : Add New Managers - Registration codes Create account : Validate Password Strength - good",
-              "timedOut": null,
-              "duration": 779,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "NEW_USER.newUser.click();\nCOMM_ELEMENTS.passwordStrength('good');",
-              "err": {},
-              "uuid": "3d23a0a6-a6b4-4041-8dbf-89590eb3abca",
-              "parentUUID": "b771e928-8b6c-4b16-af12-bee7af91aa87",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Create account : Validate Password Strength - strong",
-              "fullTitle": "UT : Add New Managers - Registration codes Create account : Validate Password Strength - strong",
-              "timedOut": null,
-              "duration": 1111,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "NEW_USER.newUser.click();\nCOMM_ELEMENTS.passwordStrength('strong');",
-              "err": {},
-              "uuid": "4acdd85f-bcdf-4e80-a849-915faa103529",
-              "parentUUID": "b771e928-8b6c-4b16-af12-bee7af91aa87",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-<<<<<<< HEAD
             "fb226fdd-3957-407f-aa32-91645666bedd",
             "4beec075-eaef-4bf4-b512-d6b942fb9d25",
             "0069f0a8-db8a-44f7-881b-545bc7a4c954",
@@ -3994,29 +3499,11 @@
             "0e804cfd-a586-4a10-ac4a-b3501bed400e",
             "f3798c6c-0c3e-4991-bc5b-84a6880600f4",
             "9b80e8f9-5fa6-4371-9bb4-acf6dd7404b8"
-=======
-            "3e2962f6-470c-4551-b98e-009089e5b78c",
-            "b47c1a6c-a9b3-4f4d-9e43-0527b4869423",
-            "09490e0d-d93f-48ec-b7e9-e402b283f102",
-            "cc21ff20-013e-4008-a2bd-6df069e29ebf",
-            "9762da2b-03de-4eb0-ba54-81671cfabdd4",
-            "7612644b-5402-4c17-b4f3-74f8872679da",
-            "bac35141-6f8b-48f1-9bc2-7c8828a87c2f",
-            "3eab1d99-d43d-46c7-8736-d1ae9217c8ec",
-            "938dfad3-e340-49ce-b170-589e65f5c231",
-            "4a946f8b-0bc8-4110-ae75-03d46bc5250c",
-            "3d23a0a6-a6b4-4041-8dbf-89590eb3abca",
-            "4acdd85f-bcdf-4e80-a849-915faa103529"
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-<<<<<<< HEAD
           "duration": 190081,
-=======
-          "duration": 43874,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -4032,26 +3519,17 @@
       "_timeout": 2000
     },
     {
-<<<<<<< HEAD
       "uuid": "5bee8b0e-66ea-4975-b99b-9c4f107f3b7f",
-=======
-      "uuid": "d4f754bf-ff5b-46ed-8a3c-ec81d6014d52",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
       "title": "",
-      "fullFile": "cypress\\e2e\\unlimited-training\\manager-admin\\my-company\\company_dark_web.ts",
-      "file": "cypress\\e2e\\unlimited-training\\manager-admin\\my-company\\company_dark_web.ts",
+      "fullFile": "cypress\\e2e\\hipaa-bpp\\manager-admin\\my-dashboard\\manager_admin_dark_web.ts",
+      "file": "cypress\\e2e\\hipaa-bpp\\manager-admin\\my-dashboard\\manager_admin_dark_web.ts",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-<<<<<<< HEAD
           "uuid": "24ab9c86-7b9c-437a-b6a7-a899cb93d270",
           "title": "HIPAA BPP : Dark Web - Run DWBA",
-=======
-          "uuid": "26a29fce-e24e-4f07-b70b-f472c60d03ae",
-          "title": "UT : Manager Admin - Dark Web Monitoring",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -4059,9 +3537,8 @@
           "tests": [
             {
               "title": "Default items should visible",
-              "fullTitle": "UT : Manager Admin - Dark Web Monitoring Default items should visible",
+              "fullTitle": "HIPAA BPP : Dark Web - Run DWBA Default items should visible",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 29829,
               "state": "passed",
               "speed": "slow",
@@ -4073,80 +3550,31 @@
               "err": {},
               "uuid": "fc530180-ba1e-4569-ad6f-b141c1907896",
               "parentUUID": "24ab9c86-7b9c-437a-b6a7-a899cb93d270",
-=======
-              "duration": 53730,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": null,
-              "code": "DARK_WEB.validateScenario('default_items');\nFOOTER.verifyItemsIfExist('UT');\nHEADER.verifyItemsIfExist('MA');\nCOMM_ELEMENTS.hideLoadingScreen();",
-              "err": {
-                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `span > svg[aria-hidden=\"false\"][role=\"img\"]`, but never found it. Queried from:\n\n              > cy.get(thead tr:first-child th:nth-child(5))",
-                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `span > svg[aria-hidden=\"false\"][role=\"img\"]`, but never found it. Queried from:\n\n              > cy.get(thead tr:first-child th:nth-child(5))\n    at ./cypress/page-objects/internal-bpp/partner-admin/my-company/dark_web.ts.companyDarkWeb.validateScenario (webpack:///./cypress/page-objects/internal-bpp/partner-admin/my-company/dark_web.ts:64:43)\n    at Context.eval (webpack:///./cypress/e2e/unlimited-training/manager-admin/my-company/company_dark_web.ts:46:17)",
-                "diff": null
-              },
-              "uuid": "5a39ba4a-33d5-4d9b-9084-7a0b867cfd91",
-              "parentUUID": "26a29fce-e24e-4f07-b70b-f472c60d03ae",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
               "title": "Check texts/labels if visible",
-              "fullTitle": "UT : Manager Admin - Dark Web Monitoring Check texts/labels if visible",
+              "fullTitle": "HIPAA BPP : Dark Web - Run DWBA Check texts/labels if visible",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 198,
-=======
-              "duration": 23294,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
-              "pending": false,
-              "context": null,
-              "code": "DARK_WEB.validateScenario('text_contains');\nFOOTER.verifyTextsIfContains('', 'UT');\nHEADER.verifyTextsIfContains();",
-              "err": {
-                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `span > svg[aria-hidden=\"false\"][role=\"img\"]`, but never found it. Queried from:\n\n              > cy.get(thead tr:first-child th:nth-child(5))",
-                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `span > svg[aria-hidden=\"false\"][role=\"img\"]`, but never found it. Queried from:\n\n              > cy.get(thead tr:first-child th:nth-child(5))\n    at companyDarkWeb.get (webpack:///./cypress/page-objects/internal-bpp/partner-admin/my-company/dark_web.ts:30:88)\n    at ./cypress/page-objects/internal-bpp/partner-admin/my-company/dark_web.ts.companyDarkWeb.validateScenario (webpack:///./cypress/page-objects/internal-bpp/partner-admin/my-company/dark_web.ts:86:21)\n    at Context.eval (webpack:///./cypress/e2e/unlimited-training/manager-admin/my-company/company_dark_web.ts:55:17)",
-                "diff": null
-              },
-              "uuid": "d8663918-a146-49ee-bfbf-23dab36e64b2",
-              "parentUUID": "26a29fce-e24e-4f07-b70b-f472c60d03ae",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Generate Reports",
-              "fullTitle": "UT : Manager Admin - Dark Web Monitoring Generate Reports",
-              "timedOut": null,
-              "duration": 4263,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "DARK_WEB.validateScenario('api_report');",
+              "code": "DARK_WEB.validateScenario('text_contains');\nFOOTER.verifyTextsIfContains('', 'HIPAA_BPP');\nHEADER.verifyTextsIfContains();",
               "err": {},
-<<<<<<< HEAD
               "uuid": "d019f08d-b897-4237-bc6e-655a32192d8b",
               "parentUUID": "24ab9c86-7b9c-437a-b6a7-a899cb93d270",
-=======
-              "uuid": "9301c711-92e0-45cc-80ea-222294ff1f0b",
-              "parentUUID": "26a29fce-e24e-4f07-b70b-f472c60d03ae",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "Validate API results when generating reports",
-              "fullTitle": "UT : Manager Admin - Dark Web Monitoring Validate API results when generating reports",
+              "title": "Validate check emails associated with any external data breaches",
+              "fullTitle": "HIPAA BPP : Dark Web - Run DWBA Validate check emails associated with any external data breaches",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 5782,
               "state": "failed",
               "speed": null,
@@ -4162,27 +3590,13 @@
               },
               "uuid": "0d04738e-4946-4a88-918d-8b41da3680e9",
               "parentUUID": "24ab9c86-7b9c-437a-b6a7-a899cb93d270",
-=======
-              "duration": 4742,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "DARK_WEB.validateScenario('generate_results');",
-              "err": {},
-              "uuid": "639971cb-d164-4cf1-b9fd-ec6bcc073704",
-              "parentUUID": "26a29fce-e24e-4f07-b70b-f472c60d03ae",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "Validate POST method each click event on table results",
-              "fullTitle": "UT : Manager Admin - Dark Web Monitoring Validate POST method each click event on table results",
+              "title": "Validate check emails not associated with any external data breaches",
+              "fullTitle": "HIPAA BPP : Dark Web - Run DWBA Validate check emails not associated with any external data breaches",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 3637,
               "state": "failed",
               "speed": null,
@@ -4198,27 +3612,13 @@
               },
               "uuid": "a1208791-a504-46e6-aa6a-780d07d329c9",
               "parentUUID": "24ab9c86-7b9c-437a-b6a7-a899cb93d270",
-=======
-              "duration": 2247,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "DARK_WEB.validateScenario('refresh_session_event');",
-              "err": {},
-              "uuid": "f62480fc-875c-48bd-99dc-684fd26ee022",
-              "parentUUID": "26a29fce-e24e-4f07-b70b-f472c60d03ae",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "Validate unregistered domain on table results",
-              "fullTitle": "UT : Manager Admin - Dark Web Monitoring Validate unregistered domain on table results",
+              "title": "Negative - Invalidate checking with empty email address field",
+              "fullTitle": "HIPAA BPP : Dark Web - Run DWBA Negative - Invalidate checking with empty email address field",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 324,
               "state": "passed",
               "speed": "fast",
@@ -4274,117 +3674,42 @@
               "fullTitle": "HIPAA BPP : Dark Web - Run DWBA OOTB - Reset table results after page refresh",
               "timedOut": null,
               "duration": 7152,
-=======
-              "duration": 6272,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
               "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "DARK_WEB.validateScenario('search_unregistered_domains');",
+              "code": "DARK_WEB.validateScenario('reset_table_results');",
               "err": {},
-<<<<<<< HEAD
               "uuid": "6784ba4f-05eb-46a9-8424-60dca84b184b",
               "parentUUID": "24ab9c86-7b9c-437a-b6a7-a899cb93d270",
-=======
-              "uuid": "37d2ac47-e3e9-49f1-8de4-671a9183e5a2",
-              "parentUUID": "26a29fce-e24e-4f07-b70b-f472c60d03ae",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "Validate unlisted site breached on table results",
-              "fullTitle": "UT : Manager Admin - Dark Web Monitoring Validate unlisted site breached on table results",
+              "title": "OOTB - Validate API results when generating results ",
+              "fullTitle": "HIPAA BPP : Dark Web - Run DWBA OOTB - Validate API results when generating results ",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 4820,
-=======
-              "duration": 6466,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "DARK_WEB.validateScenario('search_unlisted_site_breached');",
-              "err": {},
-              "uuid": "ab0d5384-05c0-41f8-b1c6-35deeb24d4aa",
-              "parentUUID": "26a29fce-e24e-4f07-b70b-f472c60d03ae",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Invalidate searching breach date",
-              "fullTitle": "UT : Manager Admin - Dark Web Monitoring Invalidate searching breach date",
-              "timedOut": null,
-              "duration": 7485,
-              "state": "passed",
-              "speed": "medium",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "DARK_WEB.validateScenario('search_breach_date');",
-              "err": {},
-              "uuid": "81f6b9d3-3f9c-4ca5-b809-08ce1ac71456",
-              "parentUUID": "26a29fce-e24e-4f07-b70b-f472c60d03ae",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Validate password redaction options",
-              "fullTitle": "UT : Manager Admin - Dark Web Monitoring Validate password redaction options",
-              "timedOut": null,
-              "duration": 3615,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "DARK_WEB.validateScenario('obfuscate_password');",
+              "code": "DARK_WEB.validateScenario('recheck_email_address');",
               "err": {},
-<<<<<<< HEAD
               "uuid": "943032eb-8b4f-4e8d-8fe4-6286f4d4619a",
               "parentUUID": "24ab9c86-7b9c-437a-b6a7-a899cb93d270",
-=======
-              "uuid": "479672e7-a806-4142-9425-db71fceec18e",
-              "parentUUID": "26a29fce-e24e-4f07-b70b-f472c60d03ae",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "Validate non redaction password",
-              "fullTitle": "UT : Manager Admin - Dark Web Monitoring Validate non redaction password",
+              "title": "Edge - Validate column sorting",
+              "fullTitle": "HIPAA BPP : Dark Web - Run DWBA Edge - Validate column sorting",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 16340,
-=======
-              "duration": 3245,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "DARK_WEB.validateScenario('non_redacted_password');",
-              "err": {},
-              "uuid": "740a39cb-f5f0-4d8a-8ca6-8a816b9d1dff",
-              "parentUUID": "26a29fce-e24e-4f07-b70b-f472c60d03ae",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Validate column sorting",
-              "fullTitle": "UT : Manager Admin - Dark Web Monitoring Validate column sorting",
-              "timedOut": null,
-              "duration": 14942,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -4393,7 +3718,6 @@
               "context": null,
               "code": "DARK_WEB.validateScenario('column_sorting');",
               "err": {},
-<<<<<<< HEAD
               "uuid": "761364e5-d8e8-4cca-a36b-94fb1521ecb4",
               "parentUUID": "24ab9c86-7b9c-437a-b6a7-a899cb93d270",
               "isHook": false,
@@ -4414,17 +3738,12 @@
               "err": {},
               "uuid": "c4cbeb1b-7a1f-4c28-bee6-d0c60ff08fd9",
               "parentUUID": "24ab9c86-7b9c-437a-b6a7-a899cb93d270",
-=======
-              "uuid": "7f93c0f6-cbae-4e65-90cf-45d15392d500",
-              "parentUUID": "26a29fce-e24e-4f07-b70b-f472c60d03ae",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-<<<<<<< HEAD
             "fc530180-ba1e-4569-ad6f-b141c1907896",
             "d019f08d-b897-4237-bc6e-655a32192d8b",
             "589bb46d-d617-42ea-99e1-38d611767363",
@@ -4442,25 +3761,6 @@
           "pending": [],
           "skipped": [],
           "duration": 75630,
-=======
-            "9301c711-92e0-45cc-80ea-222294ff1f0b",
-            "639971cb-d164-4cf1-b9fd-ec6bcc073704",
-            "f62480fc-875c-48bd-99dc-684fd26ee022",
-            "37d2ac47-e3e9-49f1-8de4-671a9183e5a2",
-            "ab0d5384-05c0-41f8-b1c6-35deeb24d4aa",
-            "81f6b9d3-3f9c-4ca5-b809-08ce1ac71456",
-            "479672e7-a806-4142-9425-db71fceec18e",
-            "740a39cb-f5f0-4d8a-8ca6-8a816b9d1dff",
-            "7f93c0f6-cbae-4e65-90cf-45d15392d500"
-          ],
-          "failures": [
-            "5a39ba4a-33d5-4d9b-9084-7a0b867cfd91",
-            "d8663918-a146-49ee-bfbf-23dab36e64b2"
-          ],
-          "pending": [],
-          "skipped": [],
-          "duration": 130301,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -4476,160 +3776,17 @@
       "_timeout": 2000
     },
     {
-<<<<<<< HEAD
       "uuid": "cab200f3-b765-403c-88d1-4d71689ba985",
-=======
-      "uuid": "17f7d103-327e-40dc-8206-6da3f600183a",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
       "title": "",
-      "fullFile": "cypress\\e2e\\unlimited-training\\manager-admin\\my-company\\training_reports.ts",
-      "file": "cypress\\e2e\\unlimited-training\\manager-admin\\my-company\\training_reports.ts",
+      "fullFile": "cypress\\e2e\\hipaa-bpp\\manager-admin\\my-dashboard\\manager_admin_micro_training.ts",
+      "file": "cypress\\e2e\\hipaa-bpp\\manager-admin\\my-dashboard\\manager_admin_micro_training.ts",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-<<<<<<< HEAD
           "uuid": "b81287f6-4b7c-451a-ba4b-72fbf36bfa0e",
           "title": "HIPAA BPP : Dashboard - Micro Training",
-=======
-          "uuid": "af3c4cc2-8cf9-4bcb-bde6-7f6b399e7f5d",
-          "title": "UT : Manager Admin - Training Reports",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Default items should visible on Annual Training",
-              "fullTitle": "UT : Manager Admin - Training Reports Default items should visible on Annual Training",
-              "timedOut": null,
-              "duration": 34138,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "COMP_TRAINING.trainingReportTypes('annual', 'default_items', 'UT');\nFOOTER.verifyItemsIfExist('UT');\nHEADER.verifyItemsIfExist('MA');\nCOMM_ELEMENTS.hideLoadingScreen();",
-              "err": {},
-              "uuid": "63bc38f1-b638-4a58-9915-12bfa01824ad",
-              "parentUUID": "af3c4cc2-8cf9-4bcb-bde6-7f6b399e7f5d",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Download Annual Training Report",
-              "fullTitle": "UT : Manager Admin - Training Reports Download Annual Training Report",
-              "timedOut": null,
-              "duration": 17574,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "COMP_TRAINING.trainingReportTypes('annual', 'download_annual_training', null);",
-              "err": {},
-              "uuid": "708294b6-5e4d-47aa-9c10-c0780df5aa01",
-              "parentUUID": "af3c4cc2-8cf9-4bcb-bde6-7f6b399e7f5d",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "View and download certificate",
-              "fullTitle": "UT : Manager Admin - Training Reports View and download certificate",
-              "timedOut": null,
-              "duration": 25443,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "COMP_TRAINING.trainingReportTypes('annual', 'view_download_certificate', null);",
-              "err": {},
-              "uuid": "53617d21-a350-4307-8e6b-17fb18bbc0e1",
-              "parentUUID": "af3c4cc2-8cf9-4bcb-bde6-7f6b399e7f5d",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Validate current course",
-              "fullTitle": "UT : Manager Admin - Training Reports Validate current course",
-              "timedOut": null,
-              "duration": 20592,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "COMP_TRAINING.trainingReportTypes('annual', 'current_course', 'UT');",
-              "err": {},
-              "uuid": "b67297e1-3890-48f3-a022-d15ec0bfb9ba",
-              "parentUUID": "af3c4cc2-8cf9-4bcb-bde6-7f6b399e7f5d",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Validate search on non-existing users",
-              "fullTitle": "UT : Manager Admin - Training Reports Validate search on non-existing users",
-              "timedOut": null,
-              "duration": 10479,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "COMP_TRAINING.trainingReportTypes('annual', 'search_non_existing_users', null);",
-              "err": {},
-              "uuid": "edccb714-a03e-4a8e-b170-652c27f2a4d9",
-              "parentUUID": "af3c4cc2-8cf9-4bcb-bde6-7f6b399e7f5d",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "63bc38f1-b638-4a58-9915-12bfa01824ad",
-            "708294b6-5e4d-47aa-9c10-c0780df5aa01",
-            "53617d21-a350-4307-8e6b-17fb18bbc0e1",
-            "b67297e1-3890-48f3-a022-d15ec0bfb9ba",
-            "edccb714-a03e-4a8e-b170-652c27f2a4d9"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 108226,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "e75e257e-d0e3-4a01-881b-74bcb7ed550b",
-      "title": "",
-      "fullFile": "cypress\\e2e\\unlimited-training\\manager-admin\\my-dashboard\\manager_admin_training.ts",
-      "file": "cypress\\e2e\\unlimited-training\\manager-admin\\my-dashboard\\manager_admin_training.ts",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "3197448a-af9c-4e13-a1f5-e96635c87f8f",
-          "title": "UT : Manager Admin - My Dashboard Training",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -4637,144 +3794,62 @@
           "tests": [
             {
               "title": "Default items should visible",
-              "fullTitle": "UT : Manager Admin - My Dashboard Training Default items should visible",
+              "fullTitle": "HIPAA BPP : Dashboard - Micro Training Default items should visible",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 31123,
-=======
-              "duration": 30179,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "TRAINING.validateScenario('default_items', 'UT', 'MA');\nFOOTER.verifyItemsIfExist('UT');\nHEADER.verifyItemsIfExist('MA');",
+              "code": "MICRO_TRAINING.validateScenario('default_items');\nFOOTER.verifyItemsIfExist('HIPAA_BPP');\nHEADER.verifyItemsIfExist('MA');",
               "err": {},
-<<<<<<< HEAD
               "uuid": "5f8452ee-f959-4078-8258-1ef1e2c991b2",
               "parentUUID": "b81287f6-4b7c-451a-ba4b-72fbf36bfa0e",
-=======
-              "uuid": "43bb3f5f-a5e5-418b-820d-7be42578bab5",
-              "parentUUID": "3197448a-af9c-4e13-a1f5-e96635c87f8f",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
               "title": "Check texts/labels if visible",
-              "fullTitle": "UT : Manager Admin - My Dashboard Training Check texts/labels if visible",
+              "fullTitle": "HIPAA BPP : Dashboard - Micro Training Check texts/labels if visible",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 3018,
-=======
-              "duration": 1276,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "TRAINING.viewTrainingTab();\nTRAINING.validateScenario('default_texts', 'UT', 'MA');\nFOOTER.verifyItemsIfExist('UT');\nHEADER.verifyItemsIfExist('MA');",
+              "code": "MICRO_TRAINING.validateScenario('default_texts');\nFOOTER.verifyTextsIfContains('', 'HIPAA_BPP');\nHEADER.verifyTextsIfContains();",
               "err": {},
-<<<<<<< HEAD
               "uuid": "d6b506d3-dbfb-4d25-8b87-4ef5562b6d9e",
               "parentUUID": "b81287f6-4b7c-451a-ba4b-72fbf36bfa0e",
-=======
-              "uuid": "dc42bbe8-1b2d-47be-af43-bc3ff58d17cf",
-              "parentUUID": "3197448a-af9c-4e13-a1f5-e96635c87f8f",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "Validate Cybersecurity Training Videos",
-              "fullTitle": "UT : Manager Admin - My Dashboard Training Validate Cybersecurity Training Videos",
+              "title": "Validate All existing micro Trainings",
+              "fullTitle": "HIPAA BPP : Dashboard - Micro Training Validate All existing micro Trainings",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 5043,
-=======
-              "duration": 33578,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "TRAINING.validateScenario('security_training_videos', 'UT', null);",
-              "err": {},
-              "uuid": "1d791d2f-468d-4666-8871-4479ea4aaae7",
-              "parentUUID": "3197448a-af9c-4e13-a1f5-e96635c87f8f",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Validate Optional Manager Training",
-              "fullTitle": "UT : Manager Admin - My Dashboard Training Validate Optional Manager Training",
-              "timedOut": null,
-              "duration": 15013,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "TRAINING.viewTrainingTab();\nTRAINING.validateScenario('training_videos', 'UT', null);",
-              "err": {},
-              "uuid": "2218c2eb-3279-4170-afda-2943a75f85cb",
-              "parentUUID": "3197448a-af9c-4e13-a1f5-e96635c87f8f",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Training (EDGE) : Validate Security Quiz",
-              "fullTitle": "UT : Manager Admin - My Dashboard Training Training (EDGE) : Validate Security Quiz",
-              "timedOut": null,
-              "duration": 90701,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "TRAINING.validateScenario('complete_security_quiz', 'UT', null);\nCOMM_ELEMENTS.hideLoadingScreen();",
-              "err": {},
-              "uuid": "dceb1569-562f-4ba3-854f-016a48ee64dc",
-              "parentUUID": "3197448a-af9c-4e13-a1f5-e96635c87f8f",
-              "isHook": false,
-              "skipped": false
-            },
-            {
-              "title": "Training (EDGE) : Validate Reviewing Security Quiz",
-              "fullTitle": "UT : Manager Admin - My Dashboard Training Training (EDGE) : Validate Reviewing Security Quiz",
-              "timedOut": null,
-              "duration": 4281,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
               "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "TRAINING.validateScenario('review_security_quiz', 'UT', null);\nCOMM_ELEMENTS.hideLoadingScreen();",
+              "code": "COMM_ELEMENTS.viewItemsPagebyTwoHundred();\nMICRO_TRAINING.validateScenario('all_trainings');",
               "err": {},
-<<<<<<< HEAD
               "uuid": "3a8eb421-49bc-4a45-8a88-31d014c7aaa5",
               "parentUUID": "b81287f6-4b7c-451a-ba4b-72fbf36bfa0e",
-=======
-              "uuid": "ce93f8ea-8b0e-4acf-9a0e-064bc4a1bacf",
-              "parentUUID": "3197448a-af9c-4e13-a1f5-e96635c87f8f",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "Training : Validate Retaking Security Quiz",
-              "fullTitle": "UT : Manager Admin - My Dashboard Training Training : Validate Retaking Security Quiz",
+              "title": "Validate all unsubmitted answers on micro trainings",
+              "fullTitle": "HIPAA BPP : Dashboard - Micro Training Validate all unsubmitted answers on micro trainings",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 15687,
               "state": "passed",
               "speed": "slow",
@@ -4812,45 +3887,32 @@
               "fullTitle": "HIPAA BPP : Dashboard - Micro Training Negative - Validate submission button and answers on submitted trainings",
               "timedOut": null,
               "duration": 9471,
-=======
-              "duration": 9971,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
               "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "TRAINING.validateScenario('retake_security_quiz', 'UT', null);\nCOMM_ELEMENTS.hideLoadingScreen();",
+              "code": "MICRO_TRAINING.validateScenario('submission');\nCOMM_ELEMENTS.hideLoadingScreen();",
               "err": {},
-<<<<<<< HEAD
               "uuid": "0b08f058-a9b4-4235-bd3f-39b1220372ae",
               "parentUUID": "b81287f6-4b7c-451a-ba4b-72fbf36bfa0e",
-=======
-              "uuid": "68ccfe0e-6b94-4702-83b4-3f94bb05e185",
-              "parentUUID": "3197448a-af9c-4e13-a1f5-e96635c87f8f",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
-              "title": "Training : Validate Step 3 - Print Your Certificate",
-              "fullTitle": "UT : Manager Admin - My Dashboard Training Training : Validate Step 3 - Print Your Certificate",
+              "title": "Negative - Validate disable submission button and answers on submitted trainings",
+              "fullTitle": "HIPAA BPP : Dashboard - Micro Training Negative - Validate disable submission button and answers on submitted trainings",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 8480,
-=======
-              "duration": 7892,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
               "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "TRAINING.validateScenario('print_certificate', 'UT', null);\nCOMM_ELEMENTS.hideLoadingScreen();",
+              "code": "MICRO_TRAINING.validateScenario('disable_submission');\nCOMM_ELEMENTS.hideLoadingScreen();",
               "err": {},
-<<<<<<< HEAD
               "uuid": "3ec354cc-139c-401c-a678-5eacc691bd23",
               "parentUUID": "b81287f6-4b7c-451a-ba4b-72fbf36bfa0e",
               "isHook": false,
@@ -4871,17 +3933,12 @@
               "err": {},
               "uuid": "11cc9907-9452-401c-94c1-c20fe244beb8",
               "parentUUID": "b81287f6-4b7c-451a-ba4b-72fbf36bfa0e",
-=======
-              "uuid": "270ab1b2-b327-48af-988c-837b3a06cdbf",
-              "parentUUID": "3197448a-af9c-4e13-a1f5-e96635c87f8f",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-<<<<<<< HEAD
             "5f8452ee-f959-4078-8258-1ef1e2c991b2",
             "d6b506d3-dbfb-4d25-8b87-4ef5562b6d9e",
             "3a8eb421-49bc-4a45-8a88-31d014c7aaa5",
@@ -4890,25 +3947,11 @@
             "0b08f058-a9b4-4235-bd3f-39b1220372ae",
             "3ec354cc-139c-401c-a678-5eacc691bd23",
             "11cc9907-9452-401c-94c1-c20fe244beb8"
-=======
-            "43bb3f5f-a5e5-418b-820d-7be42578bab5",
-            "dc42bbe8-1b2d-47be-af43-bc3ff58d17cf",
-            "1d791d2f-468d-4666-8871-4479ea4aaae7",
-            "2218c2eb-3279-4170-afda-2943a75f85cb",
-            "dceb1569-562f-4ba3-854f-016a48ee64dc",
-            "ce93f8ea-8b0e-4acf-9a0e-064bc4a1bacf",
-            "68ccfe0e-6b94-4702-83b4-3f94bb05e185",
-            "270ab1b2-b327-48af-988c-837b3a06cdbf"
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-<<<<<<< HEAD
           "duration": 106143,
-=======
-          "duration": 192891,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -4924,26 +3967,17 @@
       "_timeout": 2000
     },
     {
-<<<<<<< HEAD
       "uuid": "57f4f923-6067-4a2f-8a48-bc18f420d735",
-=======
-      "uuid": "1b7c28a3-1afa-4a40-b243-db69d95e2440",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
       "title": "",
-      "fullFile": "cypress\\e2e\\unlimited-training\\manager-admin\\contact_us.ts",
-      "file": "cypress\\e2e\\unlimited-training\\manager-admin\\contact_us.ts",
+      "fullFile": "cypress\\e2e\\hipaa-bpp\\manager-admin\\my-dashboard\\manager_admin_newsletters.ts",
+      "file": "cypress\\e2e\\hipaa-bpp\\manager-admin\\my-dashboard\\manager_admin_newsletters.ts",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-<<<<<<< HEAD
           "uuid": "aba02e5f-00f4-4663-9e93-6a57c082cf5c",
           "title": "HIPAA BPP : Newsletters",
-=======
-          "uuid": "62452f1c-0884-4cd0-b689-5d64e27cc2dc",
-          "title": "UT : Contact Us - Manager Admin",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -4951,49 +3985,35 @@
           "tests": [
             {
               "title": "Default items should visible",
-              "fullTitle": "UT : Contact Us - Manager Admin Default items should visible",
+              "fullTitle": "HIPAA BPP : Newsletters Default items should visible",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 37216,
-=======
-              "duration": 30585,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "CONTACT_US.verifyItemsIfExist();\nFOOTER.verifyItemsIfExist('UT');\nHEADER.verifyItemsIfExist('MA');",
+              "code": "cy.loginPortal();\nSIDE_NAV_BAR.basePoint();\nSIDE_NAV_BAR.viewMyDashboard();\nNEWSLETTER.viewNewslettersTab();\nNEWSLETTER.validateScenario('default_items');\nFOOTER.verifyItemsIfExist('HIPAA_BPP');\nHEADER.verifyItemsIfExist('MA');\nCOMM_ELEMENTS.viewItemsPagebyTwoHundred();",
               "err": {},
-<<<<<<< HEAD
               "uuid": "312db02b-f79b-421e-9274-15de385e7e3a",
               "parentUUID": "aba02e5f-00f4-4663-9e93-6a57c082cf5c",
-=======
-              "uuid": "55bff047-dc57-469a-b7e7-588adf695d85",
-              "parentUUID": "62452f1c-0884-4cd0-b689-5d64e27cc2dc",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
               "title": "Check texts/labels if visible",
-              "fullTitle": "UT : Contact Us - Manager Admin Check texts/labels if visible",
+              "fullTitle": "HIPAA BPP : Newsletters Check texts/labels if visible",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 64,
-=======
-              "duration": 2776,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
               "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "CONTACT_US.verifyTextsIfContains();\nFOOTER.verifyTextsIfContains('', 'UT');\nHEADER.verifyTextsIfContains();",
+              "code": "NEWSLETTER.validateScenario('default_texts');\nFOOTER.verifyTextsIfContains('', 'HIPAA_BPP');\nHEADER.verifyTextsIfContains();",
               "err": {},
-<<<<<<< HEAD
               "uuid": "fe0aa5d2-d89f-42cf-b5bf-369ceeaee28b",
               "parentUUID": "aba02e5f-00f4-4663-9e93-6a57c082cf5c",
               "isHook": false,
@@ -5383,22 +4403,14 @@
               "err": {},
               "uuid": "837fd0d0-ab95-45f4-959d-67f3133c8e35",
               "parentUUID": "13873a86-34e1-4aa4-a0f7-c99780e1858b",
-=======
-              "uuid": "8e4f75d5-bc91-427f-90a9-7313e1f48f41",
-              "parentUUID": "62452f1c-0884-4cd0-b689-5d64e27cc2dc",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
               "title": "Validate Cancel submission",
-              "fullTitle": "UT : Contact Us - Manager Admin Validate Cancel submission",
+              "fullTitle": "HIPAA BPP : Contact Us - Manager Admin Validate Cancel submission",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 4664,
-=======
-              "duration": 4710,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -5407,66 +4419,41 @@
               "context": null,
               "code": "CONTACT_US.cancelSubmission();",
               "err": {},
-<<<<<<< HEAD
               "uuid": "2fc0a35f-392c-42dd-9eaa-f5aea279dae2",
               "parentUUID": "13873a86-34e1-4aa4-a0f7-c99780e1858b",
-=======
-              "uuid": "f8976f28-aa5d-4d28-88c9-b28a1da00209",
-              "parentUUID": "62452f1c-0884-4cd0-b689-5d64e27cc2dc",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             },
             {
               "title": "Validate contact-us submission",
-              "fullTitle": "UT : Contact Us - Manager Admin Validate contact-us submission",
+              "fullTitle": "HIPAA BPP : Contact Us - Manager Admin Validate contact-us submission",
               "timedOut": null,
-<<<<<<< HEAD
               "duration": 9940,
-=======
-              "duration": 10571,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "SIDE_NAV_BAR.editProfile();\nCONTACT_US.viewContactUsTab();\nCONTACT_US.submitContactUs();",
               "err": {},
-<<<<<<< HEAD
               "uuid": "ac0a463c-beea-4ff6-8761-ea9a4c34aa7a",
               "parentUUID": "13873a86-34e1-4aa4-a0f7-c99780e1858b",
-=======
-              "uuid": "8ce0802a-1f46-4676-a21f-a9de98995557",
-              "parentUUID": "62452f1c-0884-4cd0-b689-5d64e27cc2dc",
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-<<<<<<< HEAD
             "b6b168da-1d5a-40a8-8e4b-4ab60935cacf",
             "837fd0d0-ab95-45f4-959d-67f3133c8e35",
             "2fc0a35f-392c-42dd-9eaa-f5aea279dae2",
             "ac0a463c-beea-4ff6-8761-ea9a4c34aa7a"
-=======
-            "55bff047-dc57-469a-b7e7-588adf695d85",
-            "8e4f75d5-bc91-427f-90a9-7313e1f48f41",
-            "f8976f28-aa5d-4d28-88c9-b28a1da00209",
-            "8ce0802a-1f46-4676-a21f-a9de98995557"
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-<<<<<<< HEAD
           "duration": 46398,
-=======
-          "duration": 48642,
->>>>>>> 2a0c26b9052ef262a23d5ae5482e84478b231237
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
